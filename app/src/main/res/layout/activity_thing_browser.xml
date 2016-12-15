@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#767272"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <!-- Button to list all things -->
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:textSize="@dimen/list_text_size"
+        android:background="#f25252"
+        android:text="@string/list_button"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <!-- Button to add new thing-->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:textSize="@dimen/list_text_size"
+        android:background="#f25252"
+        android:text="@string/add_button"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <!-- What new thing -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/what_thing"
+            android:textSize="@dimen/list_text_size"/>
+
+        <EditText
+            android:id="@+id/what_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <!-- Where new thing -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/where"
+            android:textSize="@dimen/list_text_size"/>
+
+        <EditText
+            android:id="@+id/where_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#6e4d50"
+        android:textSize="12dp"/>
+
+</LinearLayout>

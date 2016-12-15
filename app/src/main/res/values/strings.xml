@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">thingBrowser</string>
+    <string name="add_button">Add new thing</string>
+    <string name="list_button">List all things</string>
+    <string name="what_thing">What?</string>
+    <string name="where">Where?</string>
+</resources>
